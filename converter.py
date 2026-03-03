@@ -8,10 +8,13 @@ from dotenv import load_dotenv
 # Del 2 — Opsæt argparse og indlæs API-nøgle:
 def get_api_key():
     parser = argparse.ArgumentParser(description="Currency Converter CLI")
-    parser.add_argument("--key", help="Your ExhangeRate API key")
+    parser.add_argument("--key", help="Your ExchangeRate API key")
     args = parser.parse_args()
 
     if args.key:
+        with open(".env", "w") as f:
+            f.write(f"API_KEY={args.key}\n")
+        print("API key saved to .env file.")
         return args.key
     else:
         load_dotenv()
