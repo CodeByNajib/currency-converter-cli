@@ -28,13 +28,13 @@ The first time you run the program, your key will be saved automatically.
 
 ## Usage
 
-### First time — provide your API key
+### First time - provide your API key
 ```bash
 python3 converter.py --key your_api_key_here
 ```
 Your key will be saved automatically to a `.env` file.
 
-### After that — just run
+### After that - just run
 ```bash
 python3 converter.py
 ```
