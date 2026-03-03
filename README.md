@@ -22,23 +22,21 @@ source .venv/bin/activate  # Mac/Linux
 pip install -r requirements.txt
 ```
 
-### 4. Add your API key
-Create a `.env` file in the project root:
-```
-API_KEY=your_api_key_here
-```
+### 4. Get your API key
 Get a free API key at https://www.exchangerate-api.com
+The first time you run the program, your key will be saved automatically.
 
 ## Usage
 
-### With .env file
-```bash
-python3 converter.py
-```
-
-### With --key argument
+### First time — provide your API key
 ```bash
 python3 converter.py --key your_api_key_here
+```
+Your key will be saved automatically to a `.env` file.
+
+### After that — just run
+```bash
+python3 converter.py
 ```
 
 ## How it works
