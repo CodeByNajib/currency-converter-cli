@@ -40,3 +40,21 @@ python3 converter.py
 ```bash
 python3 converter.py --key your_api_key_here
 ```
+
+## How it works
+
+When you run the program, it will ask you three questions:
+```
+From currency (e.g. DKK): DKK
+To currency (e.g. USD): USD
+Amount: 100
+```
+
+It will then display the result:
+```
+100 DKK = 14.23 USD
+```
+
+### Supported currencies
+Some examples: DKK, USD, EUR, GBP, SEK, NOK, JPY
+Full list at: https://www.exchangerate-api.com/docs/supported-currencies
